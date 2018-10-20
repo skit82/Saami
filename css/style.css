@@ -1,0 +1,120 @@
+@font-fase {
+	font-family: "SF UI Display";
+    src: url(../font/SFUIDisplay-Thin.woff2) format("woff2"),
+        url(../font/SFUIDisplay-Thin.woff) format("woff");
+    font-weight: 100;
+    font-style: normal; 
+}
+@font-face {
+	font-family: "SF UI Display";
+    src: url(../font/SFUIDisplay-Regular.woff2) format("woff2"),
+        url(../font/SFUIDisplay-Regular.woff) format("woff");
+    font-weight: 400;
+    font-style: normal; 
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+body {
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	margin: 0 auto;
+	font-family: "SF UI Display", "Arial", sans-serif;
+	font-size: 16px;
+	font-weight: 100;
+}
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+	position: absolute;
+
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+
+	white-space: nowrap;
+
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+.banner {
+	background-image: url(../img/bg-banner.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.banner__list {
+	max-width: 1140px;
+	margin: 0 auto;
+}
+.banner__link {
+	outline: none;
+}
+.banner__img {
+	max-width: 100%;
+}
+.description {
+	margin-bottom: 35px;
+}
+.description__inner {
+	max-width: 1140px;
+	margin: 0 auto;
+}
+.description__title {
+	font-size: 26px;
+	font-weight: 100;
+	color: #666666;
+	text-align: center;
+}
+.description__text {
+	margin: 0px;
+	padding: 0 10px;
+	font-size: 16px;
+	font-weight: 100;
+	color: #8f8f8f;
+	text-indent: 10px;
+	text-align: justify;
+}
+.description__btn {
+	display: block;
+	width: 166px;
+	height: 50px;
+	margin: 0 auto;
+	margin-top: 20px;
+	padding: 0px;
+	font-size: 16px;
+	font-weight: 100;
+	line-height: 50px;
+	color: #ffffff;
+	text-transform: uppercase;
+	border: 0px;
+	background-color: rgb(252, 123, 62);
+}
+@media (min-width: 767px) {
+	.description__title {
+		font-size: 36px;
+		padding: 0 20px;
+	}
+}
+@media (min-width: 1024px) {
+	.description__title {
+		padding-left: 66px;
+		padding-right: 66px;
+		font-size: 36px;
+		font-weight: 100;
+		color: #666666;
+		text-align: center;
+	}
+	.description__text {
+		padding: 0px;
+	}
+}
