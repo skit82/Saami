@@ -76,12 +76,42 @@
           </p>
         </li>
         <li class="about-us__item">
-          <img src="img/foto-about6.jpg" width="250" height="225" alt="">
           <p class="about-us__text">
           	Ремонт окончен, качество ремонта подтвердено - клиент может забирать ноутбук из ремонта! При выдаче мы <span>документально подтверждаем гарантию</span> на выполненные работы и выдаем соответствующий Акт.
           </p>
         </li>
       </ul>
+    </section>
+    <section class="feedback">
+      <h2 class="feedback__name">
+        Остались вопросы?
+      </h2>
+      <div class="feedback__inner">
+        <form class="feedback__form" action="https://huawei-mobile-service.ru/index.php?route=common/home" method="post">
+          <p class="feedback__title">
+            Если Вы хотите вызвать курьера или задать вопрос, заполните форму и мы свяжемся с Вами в ближайшее время.
+          </p>
+          <label>
+            <input class="feedback__input" type="text" name="name"  placeholder="Как к вам обращаться?"/>
+          </label>
+          <label>
+            <input class="feedback__input" type="tel"  name="phone" pattern="^\+?[0-9\- ()]+" placeholder="Ваш контактный телефон"/>
+          </label>
+          <label>
+            <input class="feedback__input" type="text" name="enquiry" placeholder="Укажите модель и опишите проблему"/>
+          </label>
+          <label>
+            <input class="feedback__input" type="text" name="addres" placeholder="По какому адресу забирать ноутбук(если нужно)">
+          </label>
+          <label>
+            <input class="feedback__input" type="text" placeholder="Защита от злых роботов">
+          </label>
+          <input class="feedback__submit" type="button" value="Отправить" />
+        </form>
+        <p class="feedback__text">
+          Нажимая кнопку «Отправить», Вы соглашаетесь на обработку <a class="feedback__link" href="personal.html">персональных данных</a>.
+        </p>
+      </div>
     </section>
 	</main>
 	<footer class="footer">
@@ -91,22 +121,25 @@
           <a class="footer-head__link" href="tel:+74997073031">+7 (499) 707-30-31</a>
         </div>
         <div class="footer-head__item">
-          <a class="footer-head__link" href="mailto:info@huawei-mobile-service.ru">info@huawei-mobile-service.ru</a>
+          <a class="footer-head__link" href="mailto:info@xiaomi-notebook-service.ru">info@xiaomi-notebook-service.ru</a>
         </div>
         <div class="footer-head__item">
           <ul class="footer-social">
             <li class="footer-social__item">
               <a href="" class="footer-social__link footer-social__link--vk">
+                <img src="img/icon-vk.png" width="47" height="47" alt="Вконтакте">
                 <span class="visually-hidden">Мы в VK</span>
               </a>
             </li>
             <li class="footer-social__item">
               <a href="" class="footer-social__link footer-social__link--instagram">
+                <img src="img/icon-inst.png" width="47" height="47" alt="Инстрограмм">
                 <span class="visually-hidden">Мы в Instagram</span>
               </a>
             </li>
             <li class="footer-social__item">
               <a href="" class="footer-social__link footer-social__link--youtube">
+                <img src="img/icon-youtub.png" width="47" height="47" alt="Ютуб">
                 <span class="visually-hidden">Наш канал на YouTube</span>
               </a>
             </li>
@@ -114,87 +147,89 @@
         </div>
       </div>
     </div>
-    <div class="footer__inner">
-      <div class="footer-list__wrapper">
-        <ul class="footer-list footer-list--first">
-          <li class="footer-list__point">
-            <h4 class="footer-list__title">О Компания</h4>
+    <div class="footer__wrapper">
+      <div class="footer__inner">
+        <div class="footer-list__wrapper">
+          <ul class="footer-list footer-list--first">
+            <li class="footer-list__point">
+              <h4 class="footer-list__title">О Компания</h4>
+            </li>
+            <li class="footer-list__point"><a href="" class="footer-list__link">О компании</a></li>
+            <li class="footer-list__point"><a href="" class="footer-list__link">Новости</a></li>
+            <li class="footer-list__point"><a href="" class="footer-list__link">Адреса и телефоны офисов</a></li>
+            <li class="footer-list__point"><a href="" class="footer-list__link">Персональные данные</a></li>
+            <li class="footer-list__point"><a href="" class="footer-list__link">Отзывы клиентов</a></li>
+          </ul>
+        </div>
+        <div class="footer-list__wrapper">
+          <ul class="footer-list">
+            <li class="footer-list__point">
+              <h4 class="footer-list__title">Услуги</h4>
+            </li>
+            <li class="footer-list__point"><a href="" class="footer-list__link">О компании</a></li>
+            <li class="footer-list__point"><a href="" class="footer-list__link">Новости</a></li>
+            <li class="footer-list__point"><a href="" class="footer-list__link">Адреса и телефоны офисов</a></li>
+            <li class="footer-list__point"><a href="" class="footer-list__link">Персональные данные</a></li>
+            <li class="footer-list__point"><a href="" class="footer-list__link">Отзывы клиентов</a></li>
+          </ul>
+        </div>
+        <div class="footer-list__wrapper">
+          <ul class="footer-list footer-list--last">
+            <li class="footer-list__point">
+              <h4 class="footer-list__title">Оплата и доставка</h4>
+            </li>
+            <li class="footer-list__point"><a href="" class="footer-list__link">О компании</a></li>
+            <li class="footer-list__point"><a href="" class="footer-list__link">Новости</a></li>
+            <li class="footer-list__point"><a href="" class="footer-list__link">Адреса и телефоны офисов</a></li>
+            <li class="footer-list__point"><a href="" class="footer-list__link">Персональные данные</a></li>
+            <li class="footer-list__point"><a href="" class="footer-list__link">Отзывы клиентов</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-payment">
+        <ul class="footer-payment__list">
+          <li class="footer-payment__item">
+            <a class="footer-payment__link" href="">
+              <img class="footer-payment__foto footer-payment__foto--up" src="img/icon-sberbank.png" width="89" height="25" alt="Сбербанк">
+            </a>
           </li>
-          <li class="footer-list__point"><a href="" class="footer-list__link">О компании</a></li>
-          <li class="footer-list__point"><a href="" class="footer-list__link">Новости</a></li>
-          <li class="footer-list__point"><a href="" class="footer-list__link">Адреса и телефоны офисов</a></li>
-          <li class="footer-list__point"><a href="" class="footer-list__link">Персональные данные</a></li>
-          <li class="footer-list__point"><a href="" class="footer-list__link">Отзывы клиентов</a></li>
+          <li class="footer-payment__item footer-payment__item--two">
+            <a class="footer-payment__link" href="">
+              <img class="footer-payment__foto" src="img/icon-vtb.png" width="91" height="25" alt="ВТБ">
+            </a>
+          </li>
+          <li class="footer-payment__item">
+            <a class="footer-payment__link" href="">
+              <img class="footer-payment__foto" src="img/icon-visa.png" width="77" height="25" alt="Виза">
+            </a>
+          </li>
+          <li class="footer-payment__item">
+            <a class="footer-payment__link" href="">
+              <img class="footer-payment__foto" src="img/icon-mastercard.png" width="42" height="25" alt="Мастеркард">
+            </a>
+          </li>
+          <li class="footer-payment__item">
+            <a class="footer-payment__link" href="">
+              <img class="footer-payment__foto footer-paymet__foto--telefon" src="img/icon-oqwi.png" width="64" height="25" alt="Киви">
+            </a>
+          </li>
+          <li class="footer-payment__item">
+            <a class="footer-payment__link" href="">
+              <img class="footer-payment__foto footer-paymet__foto--telefon" src="img/icon-robokassa.png" width="41" height="25" alt="Робокасса">
+            </a>
+          </li>
+          <li class="footer-payment__item">
+            <a class="footer-payment__link" href="">
+              <img class="footer-payment__foto footer-paymet__foto--telefon" src="img/icon-webmoney.png" width="96" height="25" alt="Вебмани">
+            </a>
+          </li>
+          <li class="footer-payment__item">
+            <a class="footer-payment__link" href="">
+              <img class="footer-payment__foto footer-paymet__foto--telefon" src="img/icon-yandex.png" width="65" height="25" alt="Яндекс деньги">
+            </a>
+          </li>
         </ul>
       </div>
-      <div class="footer-list__wrapper">
-        <ul class="footer-list">
-          <li class="footer-list__point">
-            <h4 class="footer-list__title">Услуги</h4>
-          </li>
-          <li class="footer-list__point"><a href="" class="footer-list__link">О компании</a></li>
-          <li class="footer-list__point"><a href="" class="footer-list__link">Новости</a></li>
-          <li class="footer-list__point"><a href="" class="footer-list__link">Адреса и телефоны офисов</a></li>
-          <li class="footer-list__point"><a href="" class="footer-list__link">Персональные данные</a></li>
-          <li class="footer-list__point"><a href="" class="footer-list__link">Отзывы клиентов</a></li>
-        </ul>
-      </div>
-      <div class="footer-list__wrapper">
-        <ul class="footer-list footer-list--last">
-          <li class="footer-list__point">
-            <h4 class="footer-list__title">Оплата и доставка</h4>
-          </li>
-          <li class="footer-list__point"><a href="" class="footer-list__link">О компании</a></li>
-          <li class="footer-list__point"><a href="" class="footer-list__link">Новости</a></li>
-          <li class="footer-list__point"><a href="" class="footer-list__link">Адреса и телефоны офисов</a></li>
-          <li class="footer-list__point"><a href="" class="footer-list__link">Персональные данные</a></li>
-          <li class="footer-list__point"><a href="" class="footer-list__link">Отзывы клиентов</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-payment">
-      <ul class="footer-payment__list">
-        <li class="footer-payment__item">
-          <a class="footer-payment__link" href="">
-            <img class="footer-payment__foto footer-payment__foto--up" src="img/icon-sberbank.png" width="89" height="25" alt="Сбербанк">
-          </a>
-        </li>
-        <li class="footer-payment__item footer-payment__item--two">
-          <a class="footer-payment__link" href="">
-            <img class="footer-payment__foto" src="img/icon-vtb.png" width="91" height="25" alt="ВТБ">
-          </a>
-        </li>
-        <li class="footer-payment__item">
-          <a class="footer-payment__link" href="">
-            <img class="footer-payment__foto" src="img/icon-visa.png" width="77" height="25" alt="Виза">
-          </a>
-        </li>
-        <li class="footer-payment__item">
-          <a class="footer-payment__link" href="">
-            <img class="footer-payment__foto" src="img/icon-mastercard.png" width="42" height="25" alt="Мастеркард">
-          </a>
-        </li>
-        <li class="footer-payment__item">
-          <a class="footer-payment__link" href="">
-            <img class="footer-payment__foto footer-paymet__foto--telefon" src="img/icon-oqwi.png" width="64" height="25" alt="Киви">
-          </a>
-        </li>
-        <li class="footer-payment__item">
-          <a class="footer-payment__link" href="">
-            <img class="footer-payment__foto footer-paymet__foto--telefon" src="img/icon-robokassa.png" width="41" height="25" alt="Робокасса">
-          </a>
-        </li>
-        <li class="footer-payment__item">
-          <a class="footer-payment__link" href="">
-            <img class="footer-payment__foto footer-paymet__foto--telefon" src="img/icon-webmoney.png" width="96" height="25" alt="Вебмани">
-          </a>
-        </li>
-        <li class="footer-payment__item">
-          <a class="footer-payment__link" href="">
-            <img class="footer-payment__foto footer-paymet__foto--telefon" src="img/icon-yandex.png" width="65" height="25" alt="Яндекс деньги">
-          </a>
-        </li>
-      </ul>
     </div>
     <div class="footer-copyright">
       <p class="footer-copyright__text">© 2018 Huawei-mobile-service.ru — сервисный центр по ремонту техники Xiaomi. Все упомянутые названия и логотипы являются зарегистрированными торговыми марками и охраняются законом. Сайт носит исключительно информационный характер и не является публичной офертой.
