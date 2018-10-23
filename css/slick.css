@@ -92,6 +92,10 @@
     display: block;
     margin: 0 auto;
 }
+.slick-slide .paper__img {
+  display: block;
+  margin: 25px;
+}
 .slick-slide.slick-loading img
 {
     display: none;
@@ -122,16 +126,18 @@
 .prev-left {
   position: absolute;
   left: 0px;
-  top: 115px;
+  top: 90px;
   z-index: 1;
-  opacity: 0.05;
+  opacity: 0.2;
+  cursor: pointer;
 }
 .prev-right {
   position: absolute;
   right: 0px;
-  top: 115px;
+  top: 90px;
   z-index: 1;
-  opacity: 0.05;
+  opacity: 0.2;
+  cursor: pointer;
 }
 .slick-slider:hover .prev-left,
 .slick-slider:hover .prev-right {
@@ -141,13 +147,13 @@
   .prev-left {
   position: absolute;
   left: -25px;
-  top: 115px;
+  top: 90px;
   z-index: 1;
 }
 .prev-right {
   position: absolute;
   right: -25px;
-  top: 115px;
+  top: 90px;
   z-index: 1;
 }
 }
@@ -160,7 +166,7 @@
   left: 0;
   top: 50px;
   z-index: 1;
-  opacity: 0.05;
+  opacity: 0.2;
 }
 .right {
   width: 30px;
@@ -171,7 +177,7 @@
   right: 0;
   top: 50px;
   z-index: 1;
-  opacity: 0.05;
+  opacity: 0.2;
 }
 .slick-slider:hover .left,
 .slick-slider:hover .right {
@@ -201,23 +207,23 @@
 }
 @media (min-width: 1024px) {
   .left {
-    width: 60px;
-    height: 60px;
+    width: 55px;
+    height: 87px;
   }
   .left {
     position: absolute;
     left: -30px;
-    top: 170px;
+    top: 218px;
     z-index: 1;
   }
   .right {
-    width: 60px;
-    height: 60px;
+    width: 55px;
+    height: 87px;
   }
   .right {
     position: absolute;
     right: -30px;
-    top: 170px;
+    top: 218px;
     z-index: 1;
   }
 }

@@ -13,7 +13,7 @@ $(document).ready(function() {
       });
     })
         
-  	$('.service__list').slick({
+  	$('.paper__list').slick({
     dots: true,
     infinite: true,
     adaptiveHeight: true,

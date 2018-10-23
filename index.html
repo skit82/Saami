@@ -9,6 +9,69 @@
 	<title>Saami</title>
 </head>
 <body>
+  <header class="header">
+    <div class="header__top">
+      <div class="header__top-inner">
+        <ul class="header__top-list">
+          <li class="header__top-item">
+            <a class="header__top-link" href="#">
+              <p class="header__top-text">
+                Фирменный сервисный центр по ремонту ноутбуков <span>Xiaomi</span>
+              </p>
+            </a>
+          </li>
+          <li class="header-top__item">
+            <a class="header__top-link"  href="tel:+7(499)707-30-31">
+              <p class="header__top-text"><sup class="header__top-up">+7 (499)</sup><span>707-30-31</span></p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <nav class="header-menu">
+      <div class="header-menu__inner">
+        <ul class="header-menu__list">
+          <li class="header-menu__item">
+            <a href="" class="header-menu__link">
+              Услуги и сервис 
+            </a>
+            <ul class="header-menu__sub">
+              <li class="header-menu__sub-item">
+                <a href="catalog.html" class="header-menu__sub-link">
+                  Ремонт смартфонов Meizu
+                </a>
+              </li>
+              <li class="header-menu__sub-item">
+                <a href="" class="header-menu__sub-link">
+                  Дополнительные услуги
+                </a>
+              </li>
+              <li class="header-menu__sub-item">
+                <a href="" class="header-menu__sub-link">
+                  Независимая экспертиза
+                </a>
+              </li>
+              <li class="header-menu__sub-item">
+                <a href="" class="header-menu__sub-link">
+                  Вызов курьера
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="header-menu__item">
+            <a href="" class="header-menu__link">
+              О компании
+            </a>
+          </li>
+          <li class="header-menu__item">
+            <a href="paper.html" class="header-menu__link">
+              Наши адреса и контакты
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>  
+  </header>
 	<main>
 		<section class="banner">
       <div class="banner__list">
@@ -46,41 +109,170 @@
       <button class="description__btn">Подробнее</button>
     </section>
     <section class="about-us">
-      <h2 class="about-us__title">
-        Как мы работаем:
-      </h2>
-      <ul class="about-us__list">
-        <li class="about-us__item">
-          <p class="about-us__text">
-            Наши специалисты проконсультируют Вас по неисправности Вашего ноутбука, после чего <span>будет оформлен Акт</span> о приеме на диагностику.
-          </p>
-        </li>
-        <li class="about-us__item">
-          <p class="about-us__text">
-           	Мы проведем диагностику с использованием профессионального оборудования или программного обеспечения. Диагностика в нашем сервисном центре <span>всегда бесплатная</span>, даже если Вы откажетесь от ремонта.
-          </p>
-        </li>
-        <li class="about-us__item">
-          <p class="about-us__text">
-          	После диагностики с Вами свяжется наш менеджер и сообщит все детали по результату диагностики, стоимости и срокам будущего ремонта. Мы <span>не приступаем к ремонту без согласия</span> клиента!
-          </p>
-        </li>
-        <li class="about-us__item">
-          <p class="about-us__text">
-          	После получения Вашего согласия, мы приступаем к ремонту. Мы производим ремонт <span>с использованием только оригинальных комплектующих</span> от производителей!
-          </p>
-        </li>
-        <li class="about-us__item">
-          <p class="about-us__text">
-          	После ремонта проводится тестирование ноутбука <span>на устранение зфявленного клиентом дефекта</span>. В случае необходимости, проводится дополнительное тестирование функций.
-          </p>
-        </li>
-        <li class="about-us__item">
-          <p class="about-us__text">
-          	Ремонт окончен, качество ремонта подтвердено - клиент может забирать ноутбук из ремонта! При выдаче мы <span>документально подтверждаем гарантию</span> на выполненные работы и выдаем соответствующий Акт.
-          </p>
-        </li>
-      </ul>
+      <div class="about-us__inner">
+        <h2 class="about-us__title">
+          Как мы работаем:
+        </h2>
+        <ul class="about-us__list">
+          <li class="about-us__item">
+            <p class="about-us__text about-us__text--name">
+              Этап 1. <span>Прием на диагностику</span> 
+            </p>
+            <p class="about-us__text">
+              Наши специалисты проконсультируют Вас по неисправности Вашего ноутбука, после чего <span>будет оформлен Акт</span> о приеме на диагностику.
+            </p>
+          </li>
+          <li class="about-us__item">
+            <p class="about-us__text about-us__text--name">
+              Этап 2. <span>Диагностика</span>   
+            </p>
+            <p class="about-us__text">
+             	Мы проведем диагностику с использованием профессионального оборудования или программного обеспечения. Диагностика в нашем сервисном центре <span>всегда бесплатная</span>, даже если Вы откажетесь от ремонта.
+            </p>
+          </li>
+          <li class="about-us__item">
+            <p class="about-us__text about-us__text--name">
+              Этап 3. <span>Согласование стоимости ремонта</span>  
+            </p>
+            <p class="about-us__text">
+            	После диагностики с Вами свяжется наш менеджер и сообщит все детали по результату диагностики, стоимости и срокам будущего ремонта. Мы <span>не приступаем к ремонту без согласия</span> клиента!
+            </p>
+          </li>
+          <li class="about-us__item">
+            <p class="about-us__text about-us__text--name">
+              Этап 4. <span>Ремонт</span>   
+            </p>
+            <p class="about-us__text">
+            	После получения Вашего согласия, мы приступаем к ремонту. Мы производим ремонт <span>с использованием только оригинальных комплектующих</span> от производителей!
+            </p>
+          </li>
+          <li class="about-us__item">
+            <p class="about-us__text about-us__text--name">
+              Этап 5. <span>Проверка качества</span>   
+            </p>
+            <p class="about-us__text">
+            	После ремонта проводится тестирование ноутбука <span>на устранение зфявленного клиентом дефекта</span>. В случае необходимости, проводится дополнительное тестирование функций.
+            </p>
+          </li>
+          <li class="about-us__item">
+            <p class="about-us__text about-us__text--name">
+              Этап 6. <span>Выдача оборудования клиенту</span>   
+            </p>
+            <p class="about-us__text">
+            	Ремонт окончен, качество ремонта подтвердено - клиент может забирать ноутбук из ремонта! При выдаче мы <span>документально подтверждаем гарантию</span> на выполненные работы и выдаем соответствующий Акт.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="paper">
+      <h2 class="paper__title">Статьи</h2>
+      <div class="paper__list">
+        <div class="paper__item">
+          <div class="paper__inner">
+            <a href="" class="paper__link">
+              <span class="paper__block">
+                <img class="paper__img" src="img/upkeep.jpg" width="200" height="200" alt="Картинка">
+              </span>
+              <h3 class="paper__name">Замена термопасты в ноутбуке Xiaomi</h3>
+            </a>
+            <p class="paper__text">
+              Практически каждый пользователь сталкивался с перегревом ноутбука, из-за чего он мог тормозить или вовсе произвольно выключаться.<a class="paper__ref" href="">Подробнее...</a>
+            </p>
+          </div>
+        </div>
+        <div class="paper__item">
+          <div class="paper__inner">
+            <a href="" class="paper__link">
+              <span class="paper__block">
+                <img class="paper__img" src="img/upkeep.jpg" width="200" height="200" alt="Картинка">
+              </span>
+              <h3 class="paper__name">Замена термопасты в ноутбуке Xiaomi</h3>
+            </a>
+            <p class="paper__text">
+              Практически каждый пользователь сталкивался с перегревом ноутбука, из-за чего он мог тормозить или вовсе произвольно выключаться.<a class="paper__ref" href="">Подробнее...</a>
+            </p>
+          </div>
+        </div>
+        <div class="paper__item">
+          <div class="paper__inner">
+            <a href="" class="paper__link">
+              <span class="paper__block">
+                <img class="paper__img" src="img/upkeep.jpg" width="200" height="200" alt="Картинка">
+              </span>
+              <h3 class="paper__name">Замена термопасты в ноутбуке Xiaomi</h3>
+            </a>
+            <p class="paper__text">
+              Практически каждый пользователь сталкивался с перегревом ноутбука, из-за чего он мог тормозить или вовсе произвольно выключаться.<a class="paper__ref" href="">Подробнее...</a>
+            </p>
+          </div>
+        </div>
+        <div class="paper__item">
+          <div class="paper__inner">
+            <a href="" class="paper__link">
+              <span class="paper__block">
+                <img class="paper__img" src="img/upkeep.jpg" width="200" height="200" alt="Картинка">
+              </span>
+              <h3 class="paper__name">Замена термопасты в ноутбуке Xiaomi</h3>
+            </a>
+            <p class="paper__text">
+              Практически каждый пользователь сталкивался с перегревом ноутбука, из-за чего он мог тормозить или вовсе произвольно выключаться.<a class="paper__ref" href="">Подробнее...</a>
+            </p>
+          </div>
+        </div>
+        <div class="paper__item">
+          <div class="paper__inner">
+            <a href="" class="paper__link">
+              <span class="paper__block">
+                <img class="paper__img" src="img/upkeep.jpg" width="200" height="200" alt="Картинка">
+              </span>
+              <h3 class="paper__name">Замена термопасты в ноутбуке Xiaomi</h3>
+            </a>
+            <p class="paper__text">
+              Практически каждый пользователь сталкивался с перегревом ноутбука, из-за чего он мог тормозить или вовсе произвольно выключаться.<a class="paper__ref" href="">Подробнее...</a>
+            </p>
+          </div>
+        </div>
+        <div class="paper__item">
+          <div class="paper__inner">
+            <a href="" class="paper__link">
+              <span class="paper__block">
+                <img class="paper__img" src="img/upkeep.jpg" width="200" height="200" alt="Картинка">
+              </span>
+              <h3 class="paper__name">Замена термопасты в ноутбуке Xiaomi</h3>
+            </a>
+            <p class="paper__text">
+              Практически каждый пользователь сталкивался с перегревом ноутбука, из-за чего он мог тормозить или вовсе произвольно выключаться.<a class="paper__ref" href="">Подробнее...</a>
+            </p>
+          </div>
+        </div>
+        <div class="paper__item">
+          <div class="paper__inner">
+            <a href="" class="paper__link">
+              <span class="paper__block">
+                <img class="paper__img" src="img/upkeep.jpg" width="200" height="200" alt="Картинка">
+              </span>
+              <h3 class="paper__name">Замена термопасты в ноутбуке Xiaomi</h3>
+            </a>
+            <p class="paper__text">
+              Практически каждый пользователь сталкивался с перегревом ноутбука, из-за чего он мог тормозить или вовсе произвольно выключаться.<a class="paper__ref" href="">Подробнее...</a>
+            </p>
+          </div>
+        </div>
+        <div class="paper__item">
+          <div class="paper__inner">
+            <a href="" class="paper__link">
+              <span class="paper__block">
+                <img class="paper__img" src="img/upkeep.jpg" width="200" height="200" alt="Картинка">
+              </span>
+              <h3 class="paper__name">Замена термопасты в ноутбуке Xiaomi</h3>
+            </a>
+            <p class="paper__text">
+              Практически каждый пользователь сталкивался с перегревом ноутбука, из-за чего он мог тормозить или вовсе произвольно выключаться.<a class="paper__ref" href="">Подробнее...</a>
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
     <section class="feedback">
       <h2 class="feedback__name">
