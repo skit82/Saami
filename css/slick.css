@@ -94,7 +94,6 @@
 }
 .slick-slide .paper__img {
   display: block;
-  margin: 25px;
 }
 .slick-slide.slick-loading img
 {
@@ -125,16 +124,20 @@
 }
 .prev-left {
   position: absolute;
+  width: 35px;
+  height: 60px;
   left: 0px;
-  top: 90px;
+  top: 95px;
   z-index: 1;
   opacity: 0.2;
   cursor: pointer;
 }
 .prev-right {
   position: absolute;
+  width: 35px;
+  height: 60px;
   right: 0px;
-  top: 90px;
+  top: 95px;
   z-index: 1;
   opacity: 0.2;
   cursor: pointer;
@@ -146,20 +149,24 @@
 @media (min-width: 1024px) {
   .prev-left {
   position: absolute;
+  width: 55px;
+  height: 87px;
   left: -25px;
   top: 90px;
   z-index: 1;
 }
 .prev-right {
   position: absolute;
+  width: 55px;
+  height: 87px;
   right: -25px;
   top: 90px;
   z-index: 1;
 }
 }
 .left {
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 35px;
 }
 .left {
   position: absolute;
@@ -169,8 +176,8 @@
   opacity: 0.2;
 }
 .right {
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 35px;
 }
 .right {
   position: absolute;
@@ -185,8 +192,8 @@
 }
 @media (min-width: 768px) {
   .left {
-    width: 50px;
-    height: 50px;
+    width: 35px;
+    height: 65px;
   }
   .left {
     position: absolute;
@@ -195,8 +202,8 @@
     z-index: 1;
   }
   .right {
-    width: 50px;
-    height: 50px;
+    width: 35px;
+    height: 65px;
   }
   .right {
     position: absolute;
