@@ -1405,8 +1405,12 @@ input::placeholder {
   font-weight: 100;
   text-align: center;
   color: #fc7b3e;
+  transition: 0.45s;
 }
-.catalog-list__inner a {
+.catalog-list__inner span:hover {
+	transform: scale(1.10, 1.10);
+}
+.catalog__model {
 	display: block;
   width: 150px;
   text-decoration: none;
@@ -1432,14 +1436,34 @@ input::placeholder {
 		display: flex;
     flex-wrap: wrap;
 	}
-	.catalog-list__inner a {
+	.catalog__model {
 		width: 320px;
 		height: 270px;
     margin: 0 auto;
     margin-bottom: 20px;
     border: 1px solid #fc7b3e;
 	}
-	.catalog-list__inner a:hover {
+	.catalog__model:focus {
+		position: relative;
+		outline: none;
+	}
+	.catalog__model:focus:after {
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    height: 270px;
+    width: 320px;
+    content: '';
+    display: block;
+    border: 2px solid #fc7b3e;
+    z-index: 1;
+    pointer-events: none;
+    box-shadow: 0px 0px 8px #fc7b3e;
+	}
+	.catalog__model:hover:focus {
+		border: 2px solid #fc7b3e;
+	}
+	.catalog__model:hover {
 		border: 2px solid #fc7b3e;
 	}
 	.catalog__pucture {
