@@ -237,16 +237,16 @@
 .left-arrow {
   position: absolute;
   left: 0;
-  top: 112px;
+  top: 80px;
   z-index: 1;
-  opacity: 0.05;
+  opacity: 0.2;
 }
 .right-arrow {
   position: absolute;
   right: 0;
-  top: 112px;
+  top: 80px;
   z-index: 1;
-  opacity: 0.05;
+  opacity: 0.2;
 }
 .slick-slider:hover .left-arrow,
 .slick-slider:hover .right-arrow {
