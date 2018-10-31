@@ -79,6 +79,9 @@ input[type="radio"].visually-hidden {
 .header__top-link {
 	text-decoration: none;
 }
+.header__top-link--none {
+	display: none;
+}
 .header__top-text span {
 	color: #fc7b3e;
 }
@@ -169,10 +172,10 @@ input[type="radio"].visually-hidden {
 }
 .header-menu-mob__link {
 	display: block;
-  font-size: 16px;
-  font-weight: 400;
+  font-size: 20px;
+  font-weight: 100;
   color: #ffffff;
-  padding: 10px 0px;
+  padding: 8px 0px;
   text-decoration: none;
 }
 .header-menu-mob__img {
@@ -180,7 +183,7 @@ input[type="radio"].visually-hidden {
   cursor: pointer;
 }
 .header-menu-mob__items {
-	width: 250px;
+	width: 100%;
 }
 .header-menu-mob__wrraper {
 	position: absolute;
@@ -191,22 +194,37 @@ input[type="radio"].visually-hidden {
   padding: 0px;
   list-style: none;
   background-color: #ffffff;
-  z-index: 1;
+  z-index: 2;
 }
 .header-menu-mob__links {
+	position: relative;
 	display: block;
-  width: 250px;
+  width: 100%;
   font-size: 16px;
   font-weight: 400;
   color: #000000;
   text-decoration: none;
   padding: 10px;
   border-bottom: 1px solid #cccccc;
-  box-shadow: 1px 0px 0px 0px rgb(0, 0, 0, .50);
+}
+.header-menu-mob__links:after {
+	position: absolute;
+	content: url("../img/plus.png");
+	top: 10px;
+	right: 15px;
+	z-index: 1;
+}
+.header-menu-mob__links:hover:after,
+.header-menu-mob__links:focus:hover:after {
+	position: absolute;
+	content: url("../img/minus.png");
+	top: 5px;
+	right: 15px;
 }
 .header-menu-mob__sub {
 	padding: 0px;
   list-style: none;
+  background-color: #e6e6e6;
 }
 .header-menu-mob__sub-links {
 	display: block;
@@ -233,6 +251,9 @@ input[type="radio"].visually-hidden {
 	color: #02a1c9;
 }
 @media (min-width: 768px) {
+	.header__top-link--none {
+		display: block;
+	}
 	.header-menu__list {
 		display: block;
 	}
@@ -1814,4 +1835,91 @@ input::placeholder {
 	.product__title {
 		font-size: 36px;
 	}
+}
+.accordion {
+  width:100%;
+  max-width: 600px; 
+  margin: 0 auto
+}
+/* секции аккордеона */
+.accordion .accordion_item {
+  margin-bottom:1px;
+  position:relative
+}
+/* заголовки панелей аккордеона */
+.accordion .title_block {
+  font-weight: 400;
+  font-size: 18px;
+  color: #eee;
+  cursor:pointer;
+  background: #009688;
+  padding:10px 55px 10px 15px;
+  -webkit-transition:all .2s linear 0;
+  -webkit-transition-delay:.2s 0;
+  transition:all .2s linear 0
+}
+/* переключатель панелей, положение вниз */
+.accordion .title_block:before {
+  content:'';
+  height:8px;
+  width:8px;
+  display:block;
+  border:2px solid #fefefe;
+  border-right-width:0;
+  border-top-width:0;
+  -ms-transform:rotate(-45deg);
+  -webkit-transform:rotate(-45deg);
+  transform:rotate(-45deg);
+  position:absolute;
+  right:20px;
+  top:18px
+}
+/* активный переключатель, положение вверх */
+.accordion .active_block .title_block:before {
+  border:2px solid #fefefe;
+  border-left-width:0;
+  border-bottom-width:0;
+  top:18px
+}
+.accordion .title_block:hover {
+  background: #26A69A  
+}
+ 
+/* заголовок активного блока  */
+.accordion .active_block .title_block {
+  background: #26A69A;
+  color:#fefefe
+}
+/* блоки с содержанием */
+.accordion .info {
+  display:none;
+  padding:10px 15px;
+  overflow: hidden;
+  background:#f7f7f7
+}
+/* параграф внутри блоков с содержанием */
+.accordion .info_item {
+  margin-bottom:10px
+}
+/* картинки внутри аккордеона */
+.accordion .info img {
+    height: auto;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+/* полноразмерная картинка */
+.large-img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+/* миниатюра слева */
+.img-left {
+    width: 25%;
+    float:left;
+    margin:5px 15px 5px 0;
+}
+/* миниатюра справа */
+.img-right {
+    width: 25%;
+    float:right;
+    margin:5px 0 5px 15px;
 }
