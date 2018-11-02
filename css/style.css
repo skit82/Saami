@@ -700,7 +700,7 @@ input::placeholder {
 .footer-head {
 	background-color: #fc7b3e;
 	color: #fff;
-	/*margin-bottom: 10px;*/
+	margin-bottom: 10px;
 }
 .footer-head__inner {
 	display: -webkit-box;
@@ -1859,6 +1859,8 @@ input::placeholder {
 	width: 35%;
 	background: linear-gradient(to right, rgba(206,220,231,1) 0%,rgba(89,106,114,1) 100%);
 	margin-right: -4px;
+	height: 40px;
+	line-height: 40px;
 	font-size: 18px;
 	text-align: center;
 	padding: 10px 0;
