@@ -678,7 +678,8 @@ input::placeholder {
 }
 .footer__wrapper {
 	width: 100%;
-	background-image: url(../img/bg-footer.png);
+	background-color: #000;
+	/*background-image: url(../img/bg-footer.png);*/
 }
 .footer__inner {
   -webkit-box-sizing: border-box;
@@ -699,7 +700,7 @@ input::placeholder {
 .footer-head {
 	background-color: #fc7b3e;
 	color: #fff;
-	margin-bottom: 10px;
+	/*margin-bottom: 10px;*/
 }
 .footer-head__inner {
 	display: -webkit-box;
@@ -838,7 +839,8 @@ input::placeholder {
 }
 .footer-copyright {
 	width: 100%;
-	background-color: #000000;
+	background-color: #fc7b3e;
+	/*background-color: #000000;*/
 }
 .footer-copyright__text {
 	max-width: 1140px;
