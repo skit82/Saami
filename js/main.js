@@ -106,13 +106,16 @@ $(document).ready(function() {
     }
   });
 
-  $('.accordion .accordion_item').on('click', f_acc);
-    function f_acc(){
-    //скрываем все кроме того, что должны открыть
-    $('.accordion .accordion_item').not($(this).next()).slideUp(1000);
-      // открываем или скрываем блок под заголовком, по которому кликнули
-    $(this).next().slideToggle(2000);
-  };
+  var $menu = $('#menu');
+  $(window).scroll(function(){
+    if ( $(this).scrollTop() > 150 && $menu.hasClass('normal') ){
+      $menu.removeClass('normal').addClass('fix');
+    }
+    else if($(this).scrollTop() <= 150 && $menu.hasClass('fix')) {
+      $menu.removeClass('fix').addClass('normal');
+    }
+  });  
+
 });
 
 
