@@ -802,7 +802,8 @@ input::placeholder {
   padding-bottom: 10px;
   text-transform: uppercase;
   text-align: center;
-  border-bottom: 4px solid #fff;
+  border-bottom: 4px solid #fc7b3e;
+  /*border-bottom: 4px solid #fff;*/
 }
 .footer-list__link {
   color: #ffffff;
