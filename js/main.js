@@ -62,6 +62,8 @@ $(document).ready(function() {
   $('.banner__list').slick({
     dots: true,
     infinite: true,
+    fade: true,
+    cssEase: 'linear',
     autoplay: true,
     autoplaySpeed: 3000, 
     adaptiveHeight: true,
@@ -108,14 +110,13 @@ $(document).ready(function() {
 
   var $menu = $('#menu');
   $(window).scroll(function(){
-    if ( $(this).scrollTop() > 150 && $menu.hasClass('normal') ){
+    if ( $(this).scrollTop() > 250 && $menu.hasClass('normal') ) {
       $menu.removeClass('normal').addClass('fix');
     }
-    else if($(this).scrollTop() <= 150 && $menu.hasClass('fix')) {
+    else if($(this).scrollTop() <= 250 && $menu.hasClass('fix')) {
       $menu.removeClass('fix').addClass('normal');
     }
   });  
-
 });
 
 
