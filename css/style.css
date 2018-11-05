@@ -500,6 +500,7 @@ input[type="radio"].visually-hidden {
 .about-us__text {
 	margin: 0px;
 	font-size: 15px;
+	line-height: 22px;
 	font-weight: 100;
 	color: #ffffff;
 	text-align: justify;
@@ -2019,7 +2020,7 @@ input::placeholder {
 	}
 	#menu.fix {
 		position:fixed;
-    top: 100px; 
+    top: 80px; 
     left: 0px;
     width:100%;
     z-index: 2;
