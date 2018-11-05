@@ -53,7 +53,6 @@ input[type="radio"].visually-hidden {
 	z-index: 10;
 }
 .header__top {
-	display: none;
 	background-color: #000000;
 }
 .header__top-inner {
@@ -187,6 +186,7 @@ input[type="radio"].visually-hidden {
   font-weight: 100;
   color: #ffffff;
   padding: 8px 0px;
+  cursor: pointer;
   text-decoration: none;
   border-left: 1px solid #ffffff;
 }
@@ -262,9 +262,6 @@ input[type="radio"].visually-hidden {
 	color: #02a1c9;
 }
 @media (min-width: 768px) {
-	.header__top {
-		display: block;
-	}
 	.header__top-link--none {
 		display: block;
 	}
