@@ -2019,7 +2019,7 @@ input::placeholder {
 	}
 	#menu.fix {
 		position:fixed;
-    top: 200px; 
+    top: 0px; 
     left: 0px;
     width:100%;
     z-index: 2;
