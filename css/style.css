@@ -335,6 +335,11 @@ input[type="radio"].visually-hidden {
 	}
 }
 @media (min-width: 1024px) {
+	.header {
+		position: sticky;
+		top: 0px;
+		z-index: 10;
+	}
 	.header-menu__item::after {
 		position: absolute;
     content: "";
@@ -500,7 +505,7 @@ input[type="radio"].visually-hidden {
 .about-us__text {
 	margin: 0px;
 	font-size: 15px;
-	line-height: 22px;
+	line-height: 25px;
 	font-weight: 100;
 	color: #ffffff;
 	text-align: justify;
