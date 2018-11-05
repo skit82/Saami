@@ -47,6 +47,11 @@ input[type="radio"].visually-hidden {
 	clip: rect(0 0 0 0);
 	overflow: hidden;
 }
+.header {
+	position: sticky;
+	top: 0;
+	z-index: 10;
+}
 .header__top {
 	background-color: #000000;
 }
@@ -2029,7 +2034,7 @@ input::placeholder {
 	}
 	#menu.fix {
 		position:fixed;
-    top: 75px; 
+    top: 2px; 
     left: 0px;
     width:100%;
     z-index: 2;

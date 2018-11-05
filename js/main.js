@@ -110,10 +110,10 @@ $(document).ready(function() {
 
   var $menu = $('#menu');
   $(window).scroll(function(){
-    if ( $(this).scrollTop() > 90 && $menu.hasClass('normal') ) {
+    if ( $(this).scrollTop() > -400 && $menu.hasClass('normal') ) {
       $menu.removeClass('normal').addClass('fix');
     }
-    else if($(this).scrollTop() <= 90 && $menu.hasClass('fix')) {
+    else if($(this).scrollTop() <= -400 && $menu.hasClass('fix')) {
       $menu.removeClass('fix').addClass('normal');
     }
   });  
