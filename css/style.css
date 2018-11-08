@@ -1583,29 +1583,56 @@ input::placeholder {
 	display: block;
   margin-top: 25px;
   margin-bottom: 30px;
-  font-size: 20px;
+  font-size: 15px;
   font-weight: 100;
   text-align: center;
   color: #fc7b3e;
-  transition: 0.45s;
+  transition: 0.40s;
 }
 .catalog-list__inner span:hover {
-	transform: scale(1.10, 1.10);
+	transform: scale(1.09, 1.09);
 }
 .catalog__model {
 	display: block;
-  width: 150px;
+  width: 145px;
+  height: 189px;
   text-decoration: none;
   margin-bottom: 25px;
+  border: 1px solid #e6e6e6;
+}
+.catalog__model:focus {
+	position: relative;
+	outline: none;
+}
+.catalog__model:focus:after {
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  width: 145px;
+  height: 189px;
+  content: '';
+  display: block;
+  border: 1px solid #fc7b3e;
+  z-index: 1;
+  pointer-events: none;
+  box-shadow: 0px 0px 10px #fc7b3e;
+}
+.catalog__model:hover:focus {
+	border: 1px solid #fc7b3e;
+}
+.catalog__model:hover {
+	border: 1px solid #fc7b3e;
 }
 .catalog__pucture {
-	width: 100%;
-  height: 100%;
+	width: 90%;
+  height: 90%;
   display: flex;
-  transition: 0.45s;
+  margin: 0 auto;
+  margin-top: 15px;
+  transition: 0.40s;
 }
 .catalog__pucture:hover {
-	transform: scale(1.05, 1.05);
+	transform: scale(1.04, 1.04);
 }
 .catalog-list {
 	margin-top: 20px;
@@ -1618,9 +1645,12 @@ input::placeholder {
 		display: flex;
     flex-wrap: wrap;
 	}
+	.catalog-list__inner span:hover {
+		transform: scale(1.10, 1.10);
+	}
 	.catalog__model {
 		width: 320px;
-		height: 270px;
+		height: 320px;
     margin: 0 auto;
     margin-bottom: 20px;
     border: 1px solid #fc7b3e;
@@ -1633,14 +1663,14 @@ input::placeholder {
     position: absolute;
     top: -2px;
     left: -2px;
-    height: 270px;
+    height: 320px;
     width: 320px;
     content: '';
     display: block;
     border: 2px solid #fc7b3e;
     z-index: 1;
     pointer-events: none;
-    box-shadow: 0px 0px 8px #fc7b3e;
+    box-shadow: 0px 0px 10px #fc7b3e;
 	}
 	.catalog__model:hover:focus {
 		border: 2px solid #fc7b3e;
@@ -1653,8 +1683,14 @@ input::placeholder {
     height: 189px;
     display: block;
     margin: 0 auto;
-    padding-top: 30px;
+    margin-top: 30px;
     padding-bottom: 5px;
+	}
+	.catalog__pucture:hover {
+		transform: scale(1.05, 1.05);
+	}
+	.catalog-list__inner span {
+		font-size: 20px;
 	}
 }
 @media (min-width: 1024px) {
